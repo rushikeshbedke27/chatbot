@@ -1,0 +1,23 @@
+Installation & Setup
+
+1️. Create virtual environment
+	```bash
+	python -m venv chatbot_venv
+	source chatbot_venv/bin/activate   # Linux/Mac
+	chatbot_venv\Scripts\activate      # Windows
+
+2. Install dependencies
+	pip install -r requirements.txt
+
+3. Run the API
+	uvicorn app:app --reload
+	i. Server will start at: http://127.0.0.1:8000
+	ii. API Testing (Swagger UI)
+	    Open in browser: http://127.0.0.1:8000/docs
+
+	iii.How to Test /predict Endpoint:
+	    In Swagger UI:
+		a. Open /predict
+		b. Click Try it out
+		c. Enter:{"text": "my card payment failed" }
+		d. Click Execute
